@@ -1,1 +1,1 @@
-# garage-site
+garage
