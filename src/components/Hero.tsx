@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 useEffect(() => {
   if (phase < 3) {
     const timer = setTimeout(() => setPhase(phase + 1), ANIMATION_DURATION);
