@@ -8,13 +8,26 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+// Home page component that includes multiple sections
+const HomePage = () => {
+  return (
+    <>
+      <Hero />
+      <Services />
+      <About />
+      <Testimonials />
+      <Contact />
+    </>
+  );
+};
+
 function App() {
   return (
     <Router>
       <div className="min-h-screen">
         <Header />
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/testimonials" element={<Testimonials />} />
