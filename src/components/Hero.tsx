@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
   }, [phase]);
 
   return (
-    <section id="home" className="relative h-[70vh] flex flex-col justify-end bg-black overflow-hidden">
+    <section id="home" className="relative h-[80vh] flex flex-col justify-end bg-black overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0 w-full h-full z-0">
         {/* Car 1 */}
@@ -69,19 +69,19 @@ const Hero: React.FC = () => {
 
       {/* Hero Content */}
       <div
-        className={`relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 transition-transform duration-1000 ease-out
+        className={`relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 transition-transform duration-1000 ease-out
           ${showContent ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}
         `}
         style={{ transitionProperty: 'transform, opacity' }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
           <div>
-            <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
+            <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-4 text-yellow-400">
               Your Trusted
-              <span className="text-red-500 block">Auto Repair</span>
+              <span className="text-yellow-400 block">Auto Repair</span>
               Experts
             </h1>
-            <p className="text-base text-gray-300 mb-4 leading-relaxed">
+            <p className="text-base text-yellow-300 mb-4 leading-relaxed">
               Professional automotive repair and maintenance services with over 25 years of experience. 
               We keep your vehicle running safely and reliably.
             </p>
@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
               <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold text-base transition-all transform hover:scale-105">
                 Schedule Service Today
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-black px-4 py-2 rounded-lg font-semibold text-base transition-all">
+              <button className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-4 py-2 rounded-lg font-semibold text-base transition-all">
                 Get Free Estimate
               </button>
             </div>
