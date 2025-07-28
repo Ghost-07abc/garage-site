@@ -47,7 +47,8 @@ const Hero: React.FC = () => {
           alt="Car 2"
           className={`absolute w-full h-full object-cover transition-transform duration-1000
             ${phase === 0 ? 'translate-x-full' : ''}
-            ${phase === 1 || phase === 2 || phase === 3 ? 'translate-x-0' : ''}
+            ${(phase === 1 || phase === 2) ? 'translate-x-0' : ''}
+            ${phase === 3 ? '-translate-y-full' : ''}
             ${phase >= 4 ? 'hidden' : ''}
           `}
         />
@@ -56,10 +57,9 @@ const Hero: React.FC = () => {
         <img
           src={MAN}
           alt="Man"
-          className={`absolute w-full h-full object-cover transition-opacity duration-1000
-            ${phase <= 2 ? 'opacity-0' : ''}
-            ${phase === 3 ? 'opacity-100' : ''}
-            ${phase === 4 ? 'opacity-100' : ''}
+          className={`absolute w-full h-full object-cover transition-transform duration-1000
+            ${phase < 3 ? 'translate-y-full' : ''}
+            ${(phase === 3 || phase === 4) ? 'translate-y-0' : ''}
           `}
         />
 
