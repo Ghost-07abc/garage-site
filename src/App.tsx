@@ -2,24 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Gallery from './components/Gallery';
+import Mechanics from './components/Mechanics';
 import Services from './components/Services';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
-// Home page component that includes multiple sections
-const HomePage = () => {
-  return (
-    <>
-      <Hero />
-      <Services />
-      <About />
-      <Testimonials />
-      <Contact />
-    </>
-  );
-};
 
 function App() {
   return (
@@ -27,7 +16,13 @@ function App() {
       <div className="min-h-screen">
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Gallery />
+              <Mechanics />
+            </>
+          } />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/testimonials" element={<Testimonials />} />
