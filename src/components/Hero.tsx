@@ -5,8 +5,8 @@ const CAR1 = 'https://images.pexels.com/photos/638479/pexels-photo-638479.jpeg';
 const CAR2 = 'https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg';
 const MAN = 'https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800';
 
-const ANIMATION_DURATION = 1000;
-const CONTENT_SLIDE_DELAY = 200;
+const ANIMATION_DURATION = 700;
+const CONTENT_SLIDE_DELAY = 150;
 
 const Hero: React.FC = () => {
   const [phase, setPhase] = useState(0);
@@ -100,25 +100,25 @@ const Hero: React.FC = () => {
                 <div className="bg-gray-800 rounded-full p-3 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
                   <Wrench className="h-8 w-8 text-red-500" />
                 </div>
-                <p className="text-sm font-medium">Expert Service</p>
+                <p className="text-sm font-medium text-yellow-300">Expert Service</p>
               </div>
               <div className="text-center">
                 <div className="bg-gray-800 rounded-full p-3 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
                   <Star className="h-8 w-8 text-red-500" />
                 </div>
-                <p className="text-sm font-medium">5-Star Rated</p>
+                <p className="text-sm font-medium text-yellow-300">5-Star Rated</p>
               </div>
               <div className="text-center">
                 <div className="bg-gray-800 rounded-full p-3 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
                   <Clock className="h-8 w-8 text-red-500" />
                 </div>
-                <p className="text-sm font-medium">Same Day Service</p>
+                <p className="text-sm font-medium text-yellow-300">Same Day Service</p>
               </div>
               <div className="text-center">
                 <div className="bg-gray-800 rounded-full p-3 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
                   <Shield className="h-8 w-8 text-red-500" />
                 </div>
-                <p className="text-sm font-medium">Warranty Protected</p>
+                <p className="text-sm font-medium text-yellow-300">Warranty Protected</p>
               </div>
             </div>
           </div>
