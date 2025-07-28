@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
   }, [phase]);
 
   return (
-    <section id="home" className="relative h-[55vh] flex flex-col justify-end bg-black overflow-hidden">
+    <section id="home" className="relative h-[45vh] flex flex-col justify-end bg-black overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0 w-full h-full z-0">
         {/* Car 1 */}
@@ -69,12 +69,12 @@ const Hero: React.FC = () => {
 
       {/* Hero Content */}
       <div
-        className={`relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 transition-transform duration-1000 ease-out
+        className={`relative z-20 max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-1 transition-transform duration-1000 ease-out
           ${showContent ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}
         `}
         style={{ transitionProperty: 'transform, opacity' }}
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 items-center">
           <div>
             <h1 className="text-xl md:text-2xl font-bold leading-tight mb-2">
               Your Trusted
@@ -95,37 +95,37 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Trust Icons */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
               <div className="text-center">
-                <div className="bg-gray-800 rounded-full p-3 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
-                  <Wrench className="h-8 w-8 text-red-500" />
+                <div className="bg-gray-800 rounded-full p-1 w-8 h-8 mx-auto mb-1 flex items-center justify-center">
+                  <Wrench className="h-4 w-4 text-red-500" />
                 </div>
-                <p className="text-sm font-medium">Expert Service</p>
+                <p className="text-xs font-medium">Expert Service</p>
               </div>
               <div className="text-center">
-                <div className="bg-gray-800 rounded-full p-3 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
-                  <Star className="h-8 w-8 text-red-500" />
+                <div className="bg-gray-800 rounded-full p-1 w-8 h-8 mx-auto mb-1 flex items-center justify-center">
+                  <Star className="h-4 w-4 text-red-500" />
                 </div>
-                <p className="text-sm font-medium">5-Star Rated</p>
+                <p className="text-xs font-medium">5-Star Rated</p>
               </div>
               <div className="text-center">
-                <div className="bg-gray-800 rounded-full p-3 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
-                  <Clock className="h-8 w-8 text-red-500" />
+                <div className="bg-gray-800 rounded-full p-1 w-8 h-8 mx-auto mb-1 flex items-center justify-center">
+                  <Clock className="h-4 w-4 text-red-500" />
                 </div>
-                <p className="text-sm font-medium">Same Day Service</p>
+                <p className="text-xs font-medium">Same Day Service</p>
               </div>
               <div className="text-center">
-                <div className="bg-gray-800 rounded-full p-3 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
-                  <Shield className="h-8 w-8 text-red-500" />
+                <div className="bg-gray-800 rounded-full p-1 w-8 h-8 mx-auto mb-1 flex items-center justify-center">
+                  <Shield className="h-4 w-4 text-red-500" />
                 </div>
-                <p className="text-sm font-medium">Warranty Protected</p>
+                <p className="text-xs font-medium">Warranty Protected</p>
               </div>
             </div>
           </div>
 
           {/* Emergency Box */}
           <div className="lg:text-right">
-            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-3 border border-white border-opacity-20">
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-1 border border-white border-opacity-20">
               <h3 className="text-lg font-bold mb-2">Emergency Service Available</h3>
               <div className="space-y-1 text-left text-xs">
                 <div className="flex justify-between items-center">
