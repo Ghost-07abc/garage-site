@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
   }, [phase]);
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-end bg-black overflow-hidden">
+    <section id="home" className="relative h-screen flex flex-col justify-end bg-black overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0 w-full h-full z-0">
         {/* Car 1 */}
@@ -69,12 +69,12 @@ const Hero: React.FC = () => {
 
       {/* Hero Content */}
       <div
-        className={`relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 transition-transform duration-1000 ease-out
+        className={`relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 transition-transform duration-1000 ease-out
           ${showContent ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}
         `}
         style={{ transitionProperty: 'transform, opacity' }}
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Your Trusted
