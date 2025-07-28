@@ -5,6 +5,24 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Automobile Repair Garage Website</title>
+    <style>
+      /* Ensure page always starts from top */
+      html, body {
+        scroll-behavior: smooth;
+        scroll-padding-top: 0;
+      }
+      
+      /* Reset scroll position */
+      #root {
+        scroll-behavior: smooth;
+      }
+      
+      /* Prevent scroll position from being maintained */
+      body {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

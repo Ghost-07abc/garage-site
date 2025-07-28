@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ensure page always starts from top */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* Reset scroll position for new pages */
+#root {
+  scroll-behavior: smooth;
+}
+
+/* Ensure smooth scrolling for all elements */
+* {
+  scroll-behavior: smooth;
+}
