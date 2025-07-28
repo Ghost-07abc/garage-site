@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Wrench, Star, Clock, Shield } from 'lucide-react';
-import BurningText from './BurningText';
 
 const CAR1 = 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800';
 const CAR2 = 'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=800';
@@ -77,15 +76,15 @@ const Hero: React.FC = () => {
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <BurningText className="text-4xl md:text-6xl font-bold leading-tight mb-6 block" delay={0}>
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Your Trusted
               <span className="text-red-500 block">Auto Repair</span>
               Experts
-            </BurningText>
-            <BurningText className="text-xl text-gray-300 mb-8 leading-relaxed block" delay={600}>
+            </h1>
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
               Professional automotive repair and maintenance services with over 25 years of experience. 
               We keep your vehicle running safely and reliably.
-            </BurningText>
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105">
                 Schedule Service Today
