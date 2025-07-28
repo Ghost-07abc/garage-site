@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
           <div>
             <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-4 text-yellow-400">
               Your Trusted
-              <span className="text-yellow-400 block">Auto Repair</span>
+              <span className="text-red-500 block">Auto Repair</span>
               Experts
             </h1>
             <p className="text-base text-yellow-300 mb-4 leading-relaxed">
@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
               <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold text-base transition-all transform hover:scale-105">
                 Schedule Service Today
               </button>
-              <button className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-4 py-2 rounded-lg font-semibold text-base transition-all">
+              <button className="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-lg font-semibold text-base transition-all">
                 Get Free Estimate
               </button>
             </div>
