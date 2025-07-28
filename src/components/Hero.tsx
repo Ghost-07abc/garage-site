@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
   }, [phase]);
 
   return (
-    <section id="home" className="relative h-[70vh] flex flex-col justify-end bg-black overflow-hidden">
+    <section id="home" className="relative h-[55vh] flex flex-col justify-end bg-black overflow-hidden">
       {/* Background Images */}
       <div className="absolute inset-0 w-full h-full z-0">
         {/* Car 1 */}
@@ -69,27 +69,27 @@ const Hero: React.FC = () => {
 
       {/* Hero Content */}
       <div
-        className={`relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 transition-transform duration-1000 ease-out
+        className={`relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 transition-transform duration-1000 ease-out
           ${showContent ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}
         `}
         style={{ transitionProperty: 'transform, opacity' }}
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
           <div>
-            <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
+            <h1 className="text-xl md:text-2xl font-bold leading-tight mb-2">
               Your Trusted
               <span className="text-red-500 block">Auto Repair</span>
               Experts
             </h1>
-            <p className="text-base text-gray-300 mb-4 leading-relaxed">
+            <p className="text-sm text-gray-300 mb-2 leading-relaxed">
               Professional automotive repair and maintenance services with over 25 years of experience. 
               We keep your vehicle running safely and reliably.
             </p>
-            <div className="flex flex-col sm:flex-row gap-2 mb-6">
-              <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold text-base transition-all transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row gap-1 mb-2">
+              <button className="bg-red-600 hover:bg-red-700 text-white px-2 py-1 rounded-lg font-semibold text-xs transition-all transform hover:scale-105">
                 Schedule Service Today
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-black px-4 py-2 rounded-lg font-semibold text-base transition-all">
+              <button className="border-2 border-white text-white hover:bg-white hover:text-black px-2 py-1 rounded-lg font-semibold text-xs transition-all">
                 Get Free Estimate
               </button>
             </div>
@@ -125,9 +125,9 @@ const Hero: React.FC = () => {
 
           {/* Emergency Box */}
           <div className="lg:text-right">
-            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
-              <h3 className="text-2xl font-bold mb-6">Emergency Service Available</h3>
-              <div className="space-y-4 text-left">
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-3 border border-white border-opacity-20">
+              <h3 className="text-lg font-bold mb-2">Emergency Service Available</h3>
+              <div className="space-y-1 text-left text-xs">
                 <div className="flex justify-between items-center">
                   <span>24/7 Roadside Assistance</span>
                   <span className="text-red-500 font-bold">&#10003;</span>
@@ -145,7 +145,7 @@ const Hero: React.FC = () => {
                   <span className="text-red-500 font-bold">&#10003;</span>
                 </div>
               </div>
-              <button className="w-full mt-6 bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition-colors">
+              <button className="w-full mt-2 bg-red-600 hover:bg-red-700 text-white py-1 rounded-lg font-semibold text-xs transition-colors">
                 Call Emergency Line
               </button>
             </div>
