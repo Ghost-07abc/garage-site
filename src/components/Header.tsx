@@ -7,16 +7,16 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       {/* Top bar */}
-      <div className="bg-black text-white py-2">
+      <div className="bg-black text-white py-1">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center space-x-4">
+          <div className="flex justify-between items-center text-xs">
+            <div className="flex items-center space-x-2">
               <div className="flex items-center">
-                <Phone className="h-4 w-4 mr-2" />
+                <Phone className="h-3 w-3 mr-1" />
                 <span>(555) 123-4567</span>
               </div>
               <div className="flex items-center">
-                <MapPin className="h-4 w-4 mr-2" />
+                <MapPin className="h-3 w-3 mr-1" />
                 <span>123 Main Street, Your City, ST 12345</span>
               </div>
             </div>
@@ -29,34 +29,34 @@ const Header = () => {
 
       {/* Main header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-2">
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-black">
+            <div className="text-lg font-bold text-black">
               AutoCare Pro
             </div>
           </div>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+          <nav className="hidden md:flex space-x-4">
+            <a href="#home" className="text-gray-700 hover:text-red-600 font-medium text-sm transition-colors">
               Home
             </a>
-            <a href="#services" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+            <a href="#services" className="text-gray-700 hover:text-red-600 font-medium text-sm transition-colors">
               Services
             </a>
-            <a href="#about" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+            <a href="#about" className="text-gray-700 hover:text-red-600 font-medium text-sm transition-colors">
               About
             </a>
-            <a href="#testimonials" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+            <a href="#testimonials" className="text-gray-700 hover:text-red-600 font-medium text-sm transition-colors">
               Reviews
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+            <a href="#contact" className="text-gray-700 hover:text-red-600 font-medium text-sm transition-colors">
               Contact
             </a>
           </nav>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+          <div className="hidden md:flex items-center space-x-2">
+            <button className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg font-medium text-sm transition-colors">
               Schedule Service
             </button>
           </div>
@@ -67,31 +67,31 @@ const Header = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-red-600"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
           </div>
         </div>
 
         {/* Mobile navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            <nav className="flex flex-col space-y-4">
-              <a href="#home" className="text-gray-700 hover:text-red-600 font-medium">
+          <div className="md:hidden py-2 border-t">
+            <nav className="flex flex-col space-y-2">
+              <a href="#home" className="text-gray-700 hover:text-red-600 font-medium text-sm">
                 Home
               </a>
-              <a href="#services" className="text-gray-700 hover:text-red-600 font-medium">
+              <a href="#services" className="text-gray-700 hover:text-red-600 font-medium text-sm">
                 Services
               </a>
-              <a href="#about" className="text-gray-700 hover:text-red-600 font-medium">
+              <a href="#about" className="text-gray-700 hover:text-red-600 font-medium text-sm">
                 About
               </a>
-              <a href="#testimonials" className="text-gray-700 hover:text-red-600 font-medium">
+              <a href="#testimonials" className="text-gray-700 hover:text-red-600 font-medium text-sm">
                 Reviews
               </a>
-              <a href="#contact" className="text-gray-700 hover:text-red-600 font-medium">
+              <a href="#contact" className="text-gray-700 hover:text-red-600 font-medium text-sm">
                 Contact
               </a>
-              <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-medium transition-colors w-full">
+              <button className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg font-medium text-sm transition-colors w-full">
                 Schedule Service
               </button>
             </nav>
