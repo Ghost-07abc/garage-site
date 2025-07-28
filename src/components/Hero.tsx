@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Wrench, Star, Clock, Shield } from 'lucide-react';
 
-const CAR1 = 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800';
-const CAR2 = 'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=800';
+const CAR1 = 'https://images.pexels.com/photos/638479/pexels-photo-638479.jpeg';
+const CAR2 = 'https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg';
 const MAN = 'https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800';
 
 const ANIMATION_DURATION = 2000;
@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 items-center">
           <div>
-            <h1 className="text-xl md:text-2xl font-bold leading-tight mb-2">
+            <h1 className="text-xl md:text-2xl font-bold leading-tight mb-2 text-yellow-400">
               Your Trusted
               <span className="text-red-500 block">Auto Repair</span>
               Experts
