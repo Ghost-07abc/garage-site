@@ -5,11 +5,11 @@ const CAR1 = 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg
 const CAR2 = 'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=800';
 const MAN = 'https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800';
 
-const ANIMATION_DURATION = 2000; // ms for each phase
-const CONTENT_SLIDE_DELAY = 400; // ms after last image before content slides up
+const ANIMATION_DURATION = 2000;
+const CONTENT_SLIDE_DELAY = 400;
 
 const Hero: React.FC = () => {
-  const [phase, setPhase] = useState(0); // 0: car1, 1: car1->car2, 2: car2, 3: car2->man, 4: done
+  const [phase, setPhase] = useState(0);
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
@@ -28,31 +28,30 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex flex-col justify-end bg-black overflow-hidden">
-      {/* Animated Images as full background */}
+      {/* Background Images */}
       <div className="absolute inset-0 w-full h-full z-0">
         {/* Car 1 */}
         <img
           src={CAR1}
           alt="Car 1"
-          className={`absolute w-full h-full object-cover transition-opacity duration-1000
-            ${phase <= 1 ? 'opacity-100' : 'opacity-0'}
+          className={`absolute w-full h-full object-cover transition-transform duration-1000
+            ${phase === 0 ? 'translate-x-0' : ''}
+            ${phase === 1 ? '-translate-x-full' : ''}
             ${phase >= 2 ? 'hidden' : ''}
           `}
         />
-        
+
         {/* Car 2 */}
         <img
           src={CAR2}
           alt="Car 2"
-          className={`absolute w-full h-full object-cover transition-opacity duration-1000
-            ${phase === 0 ? 'opacity-0' : ''}
-            ${phase === 1 ? 'opacity-100' : ''}
-            ${phase === 2 ? 'opacity-100' : ''}
-            ${phase === 3 ? 'opacity-100' : ''}
+          className={`absolute w-full h-full object-cover transition-transform duration-1000
+            ${phase === 0 ? 'translate-x-full' : ''}
+            ${phase === 1 || phase === 2 || phase === 3 ? 'translate-x-0' : ''}
             ${phase >= 4 ? 'hidden' : ''}
           `}
         />
-        
+
         {/* Man */}
         <img
           src={MAN}
@@ -63,17 +62,17 @@ const Hero: React.FC = () => {
             ${phase === 4 ? 'opacity-100' : ''}
           `}
         />
-        
-        {/* Overlay for darkening effect */}
+
+        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 to-black/40 z-10" />
       </div>
 
-      {/* Hero Content: slides up after animation */}
+      {/* Hero Content */}
       <div
         className={`relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 transition-transform duration-1000 ease-out
           ${showContent ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}
         `}
-        style={{transitionProperty: 'transform, opacity'}}
+        style={{ transitionProperty: 'transform, opacity' }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -94,8 +93,8 @@ const Hero: React.FC = () => {
                 Get Free Estimate
               </button>
             </div>
-            
-            {/* Trust indicators */}
+
+            {/* Trust Icons */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="bg-gray-800 rounded-full p-3 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
@@ -123,7 +122,8 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
+          {/* Emergency Box */}
           <div className="lg:text-right">
             <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
               <h3 className="text-2xl font-bold mb-6">Emergency Service Available</h3>
