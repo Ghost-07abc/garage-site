@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,21 +39,21 @@ const Header = () => {
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+            <Link to="/" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               Home
-            </a>
-            <a href="#services" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+            </Link>
+            <Link to="/services" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               Services
-            </a>
-            <a href="#about" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+            </Link>
+            <Link to="/about" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               About
-            </a>
-            <a href="#testimonials" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+            </Link>
+            <Link to="/testimonials" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               Reviews
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+            </Link>
+            <Link to="/contact" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               Contact
-            </a>
+            </Link>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -76,21 +77,21 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t">
             <nav className="flex flex-col space-y-4">
-              <a href="#home" className="text-gray-700 hover:text-red-600 font-medium">
+              <Link to="/" className="text-gray-700 hover:text-red-600 font-medium">
                 Home
-              </a>
-              <a href="#services" className="text-gray-700 hover:text-red-600 font-medium">
+              </Link>
+              <Link to="/services" className="text-gray-700 hover:text-red-600 font-medium">
                 Services
-              </a>
-              <a href="#about" className="text-gray-700 hover:text-red-600 font-medium">
+              </Link>
+              <Link to="/about" className="text-gray-700 hover:text-red-600 font-medium">
                 About
-              </a>
-              <a href="#testimonials" className="text-gray-700 hover:text-red-600 font-medium">
+              </Link>
+              <Link to="/testimonials" className="text-gray-700 hover:text-red-600 font-medium">
                 Reviews
-              </a>
-              <a href="#contact" className="text-gray-700 hover:text-red-600 font-medium">
+              </Link>
+              <Link to="/contact" className="text-gray-700 hover:text-red-600 font-medium">
                 Contact
-              </a>
+              </Link>
               <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-medium transition-colors w-full">
                 Schedule Service
               </button>
