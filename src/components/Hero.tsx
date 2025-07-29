@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Wrench, Star, Clock, Shield } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const CAR1 = 'https://images.pexels.com/photos/638479/pexels-photo-638479.jpeg';
 const CAR2 = 'https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg';
@@ -11,6 +12,7 @@ const CONTENT_SLIDE_DELAY = 150;
 const Hero: React.FC = () => {
   const [phase, setPhase] = useState(0);
   const [showContent, setShowContent] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
@@ -86,10 +88,16 @@ const Hero: React.FC = () => {
               We keep your vehicle running safely and reliably.
             </p>
             <div className="flex flex-col sm:flex-row gap-2 mb-6">
-              <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold text-base transition-all transform hover:scale-105">
+              <button
+                className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold text-base transition-all transform hover:scale-105"
+                onClick={() => navigate('/services')}
+              >
                 Schedule Service Today
               </button>
-              <button className="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-lg font-semibold text-base transition-all">
+              <button
+                className="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded-lg font-semibold text-base transition-all"
+                onClick={() => navigate('/contact')}
+              >
                 Get Free Estimate
               </button>
             </div>
@@ -145,9 +153,13 @@ const Hero: React.FC = () => {
                   <span className="text-red-500 font-bold">&#10003;</span>
                 </div>
               </div>
-              <button className="w-full mt-6 bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition-colors">
+              <a
+                href="tel:5551234567"
+                className="w-full mt-6 bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition-colors inline-block text-center"
+                style={{ display: 'block' }}
+              >
                 Call Emergency Line
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Wrench, Award, Clock, Shield, Star, Users } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Mechanics: React.FC = () => {
+  const navigate = useNavigate();
   const mechanics = [
     {
       name: 'Mike Johnson',
@@ -187,10 +189,16 @@ const Mechanics: React.FC = () => {
               Schedule an appointment today and experience the difference our expert mechanics can make.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <button
+                className="bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                onClick={() => navigate('/services')}
+              >
                 Schedule Service
               </button>
-              <button className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-colors">
+              <button
+                className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-colors"
+                onClick={() => navigate('/about')}
+              >
                 Meet the Team
               </button>
             </div>

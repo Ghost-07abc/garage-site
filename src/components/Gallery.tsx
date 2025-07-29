@@ -11,29 +11,24 @@ const Gallery: React.FC = () => {
       title: 'Expert Engine Diagnostics'
     },
     {
-      src: 'https://images.pexels.com/photos/638479/pexels-photo-638479.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/380727/pexels-photo-380727.jpeg?auto=compress&cs=tinysrgb&w=800',
       alt: 'Modern auto repair shop interior',
       title: 'State-of-the-Art Facility'
     },
     {
-      src: 'https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/380624/pexels-photo-380624.jpeg?auto=compress&cs=tinysrgb&w=800',
       alt: 'Car being serviced on lift',
       title: 'Professional Lift Service'
     },
     {
-      src: 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/898560/pexels-photo-898560.jpeg?auto=compress&cs=tinysrgb&w=800',
       alt: 'Automotive tools and equipment',
       title: 'Professional Tools & Equipment'
     },
     {
-      src: 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg?auto=compress&cs=tinysrgb&w=800',
       alt: 'Customer service area',
       title: 'Comfortable Waiting Area'
-    },
-    {
-      src: 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Computer diagnostics station',
-      title: 'Advanced Computer Diagnostics'
     }
   ];
 
