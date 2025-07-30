@@ -7,7 +7,7 @@ const CAR2 = 'https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg';
 const MAN = 'https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800';
 
 const ANIMATION_DURATION = 1000; // Increased from 700ms to 2000ms
-const FIRST_IMAGE_DURATION = 4000; // Special longer duration for first image
+const FIRST_IMAGE_DURATION = 2000; // Special longer duration for first image
 const CONTENT_SLIDE_DELAY = 150;
 
 const Hero: React.FC = () => {
