@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="relative h-[80vh] flex flex-col justify-end bg-black overflow-hidden">
       {/* TechBasic Demo Button - Fixed Position */}
-      <div className="fixed top-8 right-8 z-50">
+      <div className="fixed top-20 right-8 z-50">
         <a
           href="https://techbasic.netlify.app"
           target="_blank"
