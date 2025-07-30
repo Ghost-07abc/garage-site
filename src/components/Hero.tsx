@@ -6,7 +6,8 @@ const CAR1 = 'https://images.pexels.com/photos/638479/pexels-photo-638479.jpeg';
 const CAR2 = 'https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg';
 const MAN = 'https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800';
 
-const ANIMATION_DURATION = 700;
+const ANIMATION_DURATION = 2000; // Increased from 700ms to 2000ms
+const FIRST_IMAGE_DURATION = 4000; // Special longer duration for first image
 const CONTENT_SLIDE_DELAY = 150;
 
 const Hero: React.FC = () => {
@@ -20,7 +21,9 @@ const Hero: React.FC = () => {
 
   useEffect(() => {
     if (phase < 4) {
-      const timer = setTimeout(() => setPhase(phase + 1), ANIMATION_DURATION);
+      // Use longer duration for the first phase (first image)
+      const duration = phase === 0 ? FIRST_IMAGE_DURATION : ANIMATION_DURATION;
+      const timer = setTimeout(() => setPhase(phase + 1), duration);
       return () => clearTimeout(timer);
     } else {
       const contentTimer = setTimeout(() => setShowContent(true), CONTENT_SLIDE_DELAY);

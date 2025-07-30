@@ -9,7 +9,7 @@ const Testimonials = () => {
       name: "Sarah Johnson",
       location: "Downtown Resident",
       rating: 5,
-      text: "AutoCare Pro saved me from a major breakdown! Their diagnostic skills are incredible, and they fixed my transmission issue quickly and affordably. The team explained everything clearly and even showed me the problem. I wouldn't trust my car to anyone else.",
+        text: "MotorCare Pro saved me from a major breakdown! Their diagnostic skills are incredible, and they fixed my transmission issue quickly and affordably. The team explained everything clearly and even showed me the problem. I wouldn't trust my car to anyone else.",
       service: "Transmission Repair",
       date: "December 2023",
       vehicleYear: "2018 Honda Accord"
@@ -18,7 +18,7 @@ const Testimonials = () => {
       name: "Mike Rodriguez",
       location: "Business Owner",
       rating: 5,
-      text: "As someone who relies on my vehicle for work, I need reliable service. AutoCare Pro has maintained my fleet for 3 years now, and their preventive maintenance has saved me thousands in repairs. They're always honest about what needs to be done and what can wait.",
+              text: "As someone who relies on my vehicle for work, I need reliable service. MotorCare Pro has maintained my fleet for 3 years now, and their preventive maintenance has saved me thousands in repairs. They're always honest about what needs to be done and what can wait.",
       service: "Fleet Maintenance",
       date: "November 2023",
       vehicleYear: "2020 Ford Transit"
@@ -47,7 +47,7 @@ const Testimonials = () => {
       name: "Jessica Martinez",
       location: "Working Mother",
       rating: 5,
-      text: "When my AC died in the middle of summer with two kids in the car, AutoCare Pro fit me in same day and had it running cold again within hours. Lifesavers!",
+              text: "When my AC died in the middle of summer with two kids in the car, MotorCare Pro fit me in same day and had it running cold again within hours. Lifesavers!",
       service: "AC Repair",
       date: "August 2023"
     },
@@ -119,7 +119,7 @@ const Testimonials = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Don't just take our word for it. Here's what our satisfied customers have to say 
-            about their experience with AutoCare Pro.
+            about their experience with MotorCare Pro.
           </p>
         </div>
 
@@ -296,7 +296,7 @@ const Testimonials = () => {
         <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 text-white text-center">
           <h3 className="text-3xl font-bold mb-4">Join Our Satisfied Customers</h3>
           <p className="text-red-100 mb-8 text-lg max-w-2xl mx-auto">
-            Experience the AutoCare Pro difference for yourself. Schedule your service today 
+            Experience the MotorCare Pro difference for yourself. Schedule your service today 
             and discover why our customers keep coming back.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

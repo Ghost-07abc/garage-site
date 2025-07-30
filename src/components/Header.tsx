@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <div className="text-2xl font-bold text-black">
-              AutoCare Pro
+              MotorCare Pro
             </div>
           </div>
 

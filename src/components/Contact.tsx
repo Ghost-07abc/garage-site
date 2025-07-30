@@ -59,8 +59,8 @@ const Contact = () => {
     {
       icon: <Mail className="h-8 w-8" />,
       title: "Email Us",
-      primary: "info@autocarepro.com",
-      secondary: "service@autocarepro.com",
+              primary: "info@motorcarepro.com",
+        secondary: "service@motorcarepro.com",
       description: "Get detailed quotes and information"
     },
     {
@@ -201,9 +201,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Email Addresses</h4>
-                  <p className="text-gray-600">General: info@autocarepro.com</p>
-                  <p className="text-gray-600">Service: service@autocarepro.com</p>
-                  <p className="text-gray-600">Parts: parts@autocarepro.com</p>
+                                  <p className="text-gray-600">General: info@motorcarepro.com</p>
+                <p className="text-gray-600">Service: service@motorcarepro.com</p>
+                <p className="text-gray-600">Parts: parts@motorcarepro.com</p>
                 </div>
               </div>
             </div>

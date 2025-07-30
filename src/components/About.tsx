@@ -68,7 +68,7 @@ const About = () => {
   const timeline = [
     {
       year: "1998",
-      title: "AutoCare Pro Founded",
+              title: "MotorCare Pro Founded",
       description: "Mike Johnson opens the first location with a vision to provide honest, reliable auto repair services."
     },
     {
@@ -104,7 +104,7 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            About AutoCare Pro
+            About MotorCare Pro
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             For over two decades, we've been your trusted automotive partner, 
@@ -119,7 +119,7 @@ const About = () => {
               Our Story
             </h3>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              AutoCare Pro began in 1998 when Mike Johnson, a master technician with a passion for 
+              MotorCare Pro began in 1998 when Mike Johnson, a master technician with a passion for 
               automotive excellence, decided to open his own shop. Frustrated by the lack of honest, 
               transparent service in the industry, Mike set out to create a different kind of auto repair experience.
             </p>
@@ -148,7 +148,7 @@ const About = () => {
           <div className="relative">
             <img
               src="https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg"
-              alt="AutoCare Pro team at work"
+              alt="MotorCare Pro team at work"
               className="rounded-2xl shadow-2xl"
             />
             <div className="absolute -bottom-8 -left-8 bg-black text-white p-6 rounded-xl shadow-xl">
@@ -304,7 +304,7 @@ const About = () => {
 
         {/* Call to Action */}
         <div className="bg-black rounded-2xl p-8 md:p-12 text-center text-white">
-          <h3 className="text-3xl font-bold mb-4">Experience the AutoCare Pro Difference</h3>
+          <h3 className="text-3xl font-bold mb-4">Experience the MotorCare Pro Difference</h3>
           <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
             Join thousands of satisfied customers who trust us with their vehicles. 
             Schedule your service today and discover why we're the area's preferred auto repair shop.
