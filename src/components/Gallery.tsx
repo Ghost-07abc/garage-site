@@ -11,24 +11,19 @@ const Gallery: React.FC = () => {
       title: 'Expert Engine Diagnostics'
     },
     {
-      src: 'https://images.pexels.com/photos/380624/pexels-photo-380624.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/4489704/pexels-photo-4489704.jpeg?auto=compress&cs=tinysrgb&w=800',
       alt: 'Car being serviced on lift',
       title: 'Professional Lift Service'
     },
     {
-      src: 'https://images.pexels.com/photos/380727/pexels-photo-380727.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: 'https://images.pexels.com/photos/4480505/pexels-photo-4480505.jpeg?auto=compress&cs=tinysrgb&w=800',
       alt: 'Modern auto repair shop interior',
       title: 'State-of-the-Art Facility'
     },
     {
-      src: 'https://images.pexels.com/photos/898560/pexels-photo-898560.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Automotive tools and equipment',
-      title: 'Professional Tools & Equipment'
-    },
-    {
       src: 'https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Customer service area',
-      title: 'Comfortable Waiting Area'
+      alt: 'Computer diagnostics station',
+      title: 'Advanced Computer Diagnostics'
     }
   ];
 
@@ -125,8 +120,8 @@ const Gallery: React.FC = () => {
                 <p className="text-gray-300 text-sm">Latest OBD-II scanners and computer systems</p>
               </div>
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
-                <h4 className="text-lg font-semibold text-red-400 mb-2">Waiting Area</h4>
-                <p className="text-gray-300 text-sm">Comfortable lounge with Wi-Fi and refreshments</p>
+                <h4 className="text-lg font-semibold text-red-400 mb-2">Computer Diagnostics</h4>
+                <p className="text-gray-300 text-sm">Advanced computer systems for precise diagnostics</p>
               </div>
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
                 <h4 className="text-lg font-semibold text-red-400 mb-2">Parts Department</h4>
