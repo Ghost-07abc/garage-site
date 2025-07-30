@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Wrench, Star, Clock, Shield } from 'lucide-react';
+import { Wrench, Star, Clock, Shield, ExternalLink } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const CAR1 = 'https://images.pexels.com/photos/638479/pexels-photo-638479.jpeg';
 const CAR2 = 'https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg';
 const MAN = 'https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=800';
 
-const ANIMATION_DURATION = 1200; // Increased from 700ms to 2000ms
-const FIRST_IMAGE_DURATION = 2000; // Special longer duration for first image
+const ANIMATION_DURATION = 2000; // Increased from 700ms to 2000ms
+const FIRST_IMAGE_DURATION = 4000; // Special longer duration for first image
 const CONTENT_SLIDE_DELAY = 150;
 
 const Hero: React.FC = () => {
@@ -33,6 +33,27 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative h-[80vh] flex flex-col justify-end bg-black overflow-hidden">
+      {/* TechBasic Demo Button - Fixed Position */}
+      <div className="fixed top-8 right-8 z-50">
+        <a
+          href="https://techbasic.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold text-sm shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 cursor-pointer border-2 border-transparent hover:border-blue-400"
+          style={{
+            clipPath: 'polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%)',
+            paddingRight: '2rem'
+          }}
+        >
+          <span className="flex items-center">
+            Demo Site by TechBasic
+            <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
+          </span>
+          {/* Pulse animation indicator */}
+          <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+        </a>
+      </div>
+
       {/* Background Images */}
       <div className="absolute inset-0 w-full h-full z-0">
         {/* Car 1 */}
