@@ -11,14 +11,14 @@ const Gallery: React.FC = () => {
       title: 'Expert Engine Diagnostics'
     },
     {
-      src: 'https://images.pexels.com/photos/380727/pexels-photo-380727.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Modern auto repair shop interior',
-      title: 'State-of-the-Art Facility'
-    },
-    {
       src: 'https://images.pexels.com/photos/380624/pexels-photo-380624.jpeg?auto=compress&cs=tinysrgb&w=800',
       alt: 'Car being serviced on lift',
       title: 'Professional Lift Service'
+    },
+    {
+      src: 'https://images.pexels.com/photos/380727/pexels-photo-380727.jpeg?auto=compress&cs=tinysrgb&w=800',
+      alt: 'Modern auto repair shop interior',
+      title: 'State-of-the-Art Facility'
     },
     {
       src: 'https://images.pexels.com/photos/898560/pexels-photo-898560.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -41,7 +41,7 @@ const Gallery: React.FC = () => {
   };
 
   return (
-    <section id="gallery" className="py-16 bg-gray-900">
+    <section id="gallery" className="py-16 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -116,19 +116,19 @@ const Gallery: React.FC = () => {
 
             {/* Features Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gray-800 p-6 rounded-lg">
+              <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
                 <h4 className="text-lg font-semibold text-red-400 mb-2">Service Bays</h4>
                 <p className="text-gray-300 text-sm">8 professional service bays with hydraulic lifts</p>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg">
+              <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
                 <h4 className="text-lg font-semibold text-red-400 mb-2">Diagnostic Equipment</h4>
                 <p className="text-gray-300 text-sm">Latest OBD-II scanners and computer systems</p>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg">
+              <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
                 <h4 className="text-lg font-semibold text-red-400 mb-2">Waiting Area</h4>
                 <p className="text-gray-300 text-sm">Comfortable lounge with Wi-Fi and refreshments</p>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg">
+              <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
                 <h4 className="text-lg font-semibold text-red-400 mb-2">Parts Department</h4>
                 <p className="text-gray-300 text-sm">On-site parts inventory for quick service</p>
               </div>
