@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import TranslateButton from './TranslateButton';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,8 +22,9 @@ const Header = () => {
                 <span>123 Main Street, Your City, ST 12345</span>
               </div>
             </div>
-            <div className="hidden sm:block">
+            <div className="hidden sm:flex items-center space-x-4">
               <span>Mon-Fri: 8AM-6PM | Sat: 8AM-4PM</span>
+              <TranslateButton />
             </div>
           </div>
         </div>
@@ -57,6 +59,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
+            <TranslateButton />
             <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
               Schedule Service
             </button>
@@ -92,6 +95,9 @@ const Header = () => {
               <Link to="/contact" className="text-gray-700 hover:text-red-600 font-medium">
                 Contact
               </Link>
+              <div className="py-2">
+                <TranslateButton />
+              </div>
               <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-medium transition-colors w-full">
                 Schedule Service
               </button>
