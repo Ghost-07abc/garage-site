@@ -34,24 +34,38 @@ body {
 }
 
 .goog-te-gadget .goog-te-combo {
-  background-color: #f3f4f6;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
-  padding: 6px 12px;
-  font-size: 14px;
-  color: #374151;
-  outline: none;
-  transition: all 0.2s ease;
+  background-color: #ffffff !important;
+  border: 2px solid #3b82f6 !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  outline: none !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  min-width: 120px !important;
 }
 
 .goog-te-gadget .goog-te-combo:hover {
-  border-color: #ef4444;
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+  border-color: #8b5cf6 !important;
+  box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.3) !important;
+  transform: translateY(-2px) !important;
 }
 
 .goog-te-gadget .goog-te-combo:focus {
-  border-color: #ef4444;
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+  border-color: #8b5cf6 !important;
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.2) !important;
+}
+
+/* Make the dropdown more prominent */
+.goog-te-gadget .goog-te-menu-value {
+  color: #1f2937 !important;
+  font-weight: 600 !important;
+}
+
+.goog-te-gadget .goog-te-menu-value:before {
+  content: "🌍 " !important;
 }
 
 /* Hide Google Translate branding */
@@ -59,14 +73,25 @@ body {
   display: none !important;
 }
 
-.goog-te-menu-value {
-  color: #374151 !important;
-}
-
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
   .goog-te-gadget .goog-te-combo {
-    font-size: 12px;
-    padding: 4px 8px;
+    font-size: 12px !important;
+    padding: 6px 12px !important;
+    min-width: 100px !important;
   }
+}
+
+/* Add a pulsing animation for the translate button */
+@keyframes translate-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+}
+
+.translate-button-pulse {
+  animation: translate-pulse 2s infinite;
 }

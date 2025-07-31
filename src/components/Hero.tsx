@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Wrench, Star, Clock, Shield, ExternalLink } from 'lucide-react';
+import { Wrench, Star, Clock, Shield, ExternalLink, Globe } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import TranslateButton from './TranslateButton';
 
 const CAR1 = 'https://images.pexels.com/photos/638479/pexels-photo-638479.jpeg';
 const CAR2 = 'https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg';
@@ -52,6 +53,22 @@ const Hero: React.FC = () => {
           {/* Pulse animation indicator */}
           <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
         </a>
+      </div>
+
+      {/* Prominent Translate Button - Fixed Position */}
+      <div className="fixed top-32 right-8 z-50">
+        <div className="flex items-center bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-3 rounded-full shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 transform hover:scale-110 animate-bounce">
+          <Globe className="h-5 w-5 mr-2 animate-spin" style={{ animationDuration: '2s' }} />
+          <span className="font-bold text-sm">🌍 TRANSLATE</span>
+          <div 
+            id="google_translate_element_hero" 
+            className="google-translate-container ml-3"
+            style={{
+              fontSize: '14px',
+              fontFamily: 'Arial, sans-serif'
+            }}
+          />
+        </div>
       </div>
 
       {/* Background Images */}
